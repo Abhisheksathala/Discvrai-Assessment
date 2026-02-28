@@ -11,7 +11,7 @@ const ProductList = () => {
 
   async function fetchProducts  ()  {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://discvrai-assessment-1.onrender.com/api/products');
       setProducts(response.data);
       setLoading(false);
     } catch (err) {

@@ -26,7 +26,7 @@ const AskQuery = () => {
     setResponse(null);
 
     try {
-      const result = await axios.post('http://localhost:5000/api/ask', {
+      const result = await axios.post('https://discvrai-assessment-1.onrender.com/api/ask', {
         query: query
       });
       
