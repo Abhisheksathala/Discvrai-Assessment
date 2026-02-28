@@ -39,7 +39,7 @@ A full-stack product discovery application that leverages **Google's Gemini AI**
 
 ##  Live Demo
 
-[Add your deployment link here once deployed]
+[ https://2fdiscvrai.netlify.app/]
 
 ---
 
@@ -55,7 +55,7 @@ A full-stack product discovery application that leverages **Google's Gemini AI**
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/discvrai-assignment.git
+git clone https://github.com/Abhisheksathala/Discvrai-Assessment
 cd discvrai-assignment
 
 
@@ -255,14 +255,8 @@ No API keys in code
 
 Working end-to-end flow
 
- Project Complete! Ready for Submission
+Project Complete! Ready for Submission
 
-text
 
-Just copy this entire thing and paste it into your `README.md` file! Then update:
-1. `yourusername` with your actual GitHub username
-2. Add your deployment links if you have them
-3. Add your name and contact info
-4. Add screenshots if you want (optional)
 
 Your project is ready to ship! 
