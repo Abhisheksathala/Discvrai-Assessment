@@ -1,0 +1,268 @@
+# 🛍️ Discvrai - Product Discovery with AI Assist
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![React](https://img.shields.io/badge/React-18.2.0-61dafb)
+![Node](https://img.shields.io/badge/Node.js-18.x-339933)
+![Express](https://img.shields.io/badge/Express-4.18.2-000000)
+![Gemini AI](https://img.shields.io/badge/Gemini_AI-Free-8E75B2)
+
+A full-stack product discovery application that leverages **Google's Gemini AI** to provide natural language product search and recommendations. Users can browse products or ask questions in plain English to find exactly what they're looking for.
+
+---
+
+##  Features
+
+-  **Natural Language Search** - Ask questions like "Show me laptops under $2000" or "What's good for gaming?"
+-  **Product Catalog** - Browse 45+ products across multiple categories
+-  **AI-Powered Responses** - Gemini AI interprets queries and recommends relevant products
+-  **Real-time Results** - Instant AI responses with product matches
+-  **Responsive Design** - Beautiful UI that works on all devices
+-  **Example Queries** - One-click example questions to get started
+
+---
+
+##  Tech Stack
+
+### Backend
+- **Node.js** - Runtime environment
+- **Express** - Web framework
+- **Google Generative AI** - Gemini AI SDK
+- **CORS** - Cross-origin resource sharing
+- **Dotenv** - Environment variables
+
+### Frontend
+- **React** - UI library
+- **Axios** - HTTP client
+- **CSS3** - Styling with modern features
+
+---
+
+##  Live Demo
+
+[Add your deployment link here once deployed]
+
+---
+
+##  Prerequisites
+
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
+- **Google Gemini API Key** (free from [Google AI Studio](https://aistudio.google.com/app/apikey))
+
+---
+
+##  Running Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/discvrai-assignment.git
+cd discvrai-assignment
+
+
+# Navigate to backend folder
+cd server
+
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.example .env
+
+# Edit .env and add your Gemini API key
+# GEMINI_API_KEY=your_api_key_here
+# PORT=5000
+
+# Start the backend server
+npm run dev
+
+
+# Open a new terminal
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the React app
+npm start
+
+
+discvrai-assignment/
+├── server/                 # Backend
+│   ├── index.js           # Main server file
+│   ├── products.js        # Product catalog (45+ items)
+│   ├── .env               # Environment variables
+│   └── package.json
+│
+└── frontend/              # Frontend
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   │   ├── AskQuery.js        # AI search component
+    │   │   ├── ProductList.js     # Product grid component
+    │   │   └── styles/            # CSS files
+    │   │       ├── AskQuery.css
+    │   │       └── ProductList.css
+    │   ├── App.js
+    │   ├── App.css
+    │   └── index.js
+    └── package.json
+
+
+    # Google Gemini API Key - Get one for free at https://aistudio.google.com/app/apikey
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# Server port (default: 5000)
+PORT=5000
+
+
+
+
+json
+🌐 API Endpoints
+Method	Endpoint	Description	Request Body
+GET	/api/products	Get all products	-
+GET	/api/test-gemini	Test Gemini connection	-
+POST	/api/ask	AI product search	{ "query": "your question" }
+Example API Response
+POST /api/ask
+
+json
+{
+  "query": "show me laptops",
+  "answer": "I found some great laptops for you!",
+  "products": [
+    {
+      "id": "P001",
+      "name": "MacBook Pro 16\"",
+      "category": "Electronics",
+      "price": 2499.99,
+      "description": "Powerful laptop with M3 chip, 36GB RAM, and 1TB SSD"
+    },
+    {
+      "id": "P009",
+      "name": "Dell XPS 15",
+      "category": "Electronics",
+      "price": 1899.99,
+      "description": "Premium laptop with InfinityEdge display and Intel i9 processor"
+    }
+  ]
+}
+🎯 Example Queries to Try
+"Show me laptops under $2000"
+
+"What headphones are good for music?"
+
+"I need a gaming setup"
+
+"Affordable electronics under $500"
+
+"Smartwatches with health tracking"
+
+"Best products for productivity"
+
+"Show me all audio products"
+
+"What's good for students?"
+
+"Compare MacBook and Dell XPS"
+
+"Products for work from home"
+
+📊 Product Categories
+Category	Number of Products
+Electronics	12
+Audio	6
+Gaming	4
+Wearables	4
+Cameras	4
+Smart Home	5
+Accessories	7
+Furniture	1
+Total	45
+🎨 UI Features
+Gradient Header - Eye-catching purple gradient
+
+Responsive Grid - Cards adjust to screen size
+
+Hover Effects - Interactive card animations
+
+Example Buttons - One-click query suggestions
+
+Loading States - Visual feedback during AI processing
+
+Error Handling - User-friendly error messages
+
+Backdrop Blur - Modern glass-morphism effects
+
+
+ Contributing
+This project is part of a technical assessment and is not open for contributions. However, feedback is welcome!
+
+📄 License
+This project is created for the Discvrai Full-Stack Developer Assessment. All rights reserved.
+
+ Author
+Your Abhishek
+
+GitHub: @abhisheksathala
+
+LinkedIn: Your Profile
+
+Portfolio: yourportfolio.com
+
+ Acknowledgments
+Google Gemini AI for the free AI API
+
+React for the amazing UI library
+
+Express for the minimalist web framework
+
+Discvrai for the assessment opportunity
+
+ Contact
+For any questions regarding this project, please reach out via:
+
+GitHub Issues
+
+Email: your.email@example.com
+
+Made with ❤️ for Discvrai Assessment
+
+ Submission Checklist
+Backend API with /api/products and /api/ask
+
+Gemini AI integration working
+
+React frontend with product listing
+
+AI search functionality
+
+Responsive styling
+
+Environment variables setup
+
+Error handling
+
+Loading states
+
+README.md complete
+
+.env.example file added
+
+All dependencies listed in package.json
+
+No API keys in code
+
+Working end-to-end flow
+
+ Project Complete! Ready for Submission
+
+text
+
+Just copy this entire thing and paste it into your `README.md` file! Then update:
+1. `yourusername` with your actual GitHub username
+2. Add your deployment links if you have them
+3. Add your name and contact info
+4. Add screenshots if you want (optional)
+
+Your project is ready to ship! 

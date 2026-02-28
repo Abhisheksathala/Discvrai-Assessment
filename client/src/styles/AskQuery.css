@@ -1,0 +1,166 @@
+.ask-query {
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 100%;
+}
+
+.ask-query h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.ask-form {
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ask-form input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.ask-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.3);
+}
+
+.ask-form button {
+  padding: 15px 30px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.ask-form button:hover:not(:disabled) {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.ask-form button:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.response {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 25px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.answer {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.recommended-products h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.3em;
+}
+
+.products-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.mini-product-card {
+  padding: 15px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mini-product-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.25);
+}
+
+.mini-product-card h5 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+  color: white;
+}
+
+.mini-product-card .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 0;
+}
+
+.error {
+  max-width: 800px;
+  margin: 20px auto 0;
+  padding: 15px;
+  background: #ff4444;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.no-products {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Example queries buttons */
+.example-queries {
+  max-width: 800px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.example-button {
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.example-button:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.05);
+}
