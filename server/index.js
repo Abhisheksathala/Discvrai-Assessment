@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // API endpoints
-app.get("/api/data", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hello from the server!" });
 });
 app.get("/api/test-gemini", async (req, res) => {
